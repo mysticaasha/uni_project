@@ -11,9 +11,7 @@ This repository contains the code and resources for a project that uses the YOLO
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Requirements](#requirements)
-- [How to Run](#how-to-run)
 - [Directory Structure](#directory-structure)
-- [References](#references)
 
 ## Project Overview
 The goal of this project is to classify land cover types from satellite images using the YOLO model. We utilized the EuroSAT dataset, which contains multispectral images captured by the Sentinel-2 satellite. This project demonstrates the potential of deep learning models like YOLO for remote sensing applications.
@@ -63,3 +61,16 @@ The goal of this project is to classify land cover types from satellite images u
 - Install requirements via:
   ```bash
   pip install -r requirements.txt
+
+## Directory Structure
+|-- data/
+| |-- original_data/ # Raw EuroSAT data
+| |-- pretrained_data/ # Processed data ready for YOLO
+|-- models/
+| |-- yolov8n-cls.pt # YOLO model weights
+|-- scripts/
+| |-- preprocess.py # Script for data preprocessing
+| |-- train.py # Script for training YOLO model
+| |-- evaluate.py # Script for evaluating the model
+|-- README.md # Project documentation
+|-- requirements.txt # Required libraries
