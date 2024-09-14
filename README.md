@@ -63,14 +63,10 @@ The goal of this project is to classify land cover types from satellite images u
   pip install -r requirements.txt
 
 ## Directory Structure
-|-- data/
-|   |-- original_data/       # Raw EuroSAT data
-|   |-- pretrained_data/     # Processed data ready for YOLO
-|-- models/
-|   |-- yolov8n-cls.pt       # YOLO model weights
-|-- scripts/
-|   |-- preprocess.py        # Script for data preprocessing
-|   |-- train.py             # Script for training YOLO model
-|   |-- evaluate.py          # Script for evaluating the model
-|-- README.md                # Project documentation
-|-- requirements.txt         # Required libraries
+- |-- data/
+- |   |-- original_data/       # Raw EuroSAT data
+- |   |-- pretrained_data/     # Processed data ready for YOLO
+- |-- models/
+- |   |-- yolov8n-cls.pt       # YOLO model weights
+- |-- main.py
+- |-- requirements.txt         # Required libraries
